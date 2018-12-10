@@ -713,13 +713,7 @@ class BasePreview extends React.Component<Props, State> {
     }
 
     return (
-      <Container
-        style={{
-          position: 'relative',
-          flex: 1,
-          display: hide ? 'none' : undefined,
-        }}
-      >
+      <Container hide={hide}>
         {showNavigation && (
           <Navigator
             url={decodeURIComponent(url)}

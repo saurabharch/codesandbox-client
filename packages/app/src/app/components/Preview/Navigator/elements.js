@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 2.5rem;
   min-height: 2.5rem;
   box-sizing: border-box;
+  cursor: move;
 `;
 
 export const Icons = styled.div`
