@@ -4,6 +4,8 @@ import { observer } from 'mobx-react';
 import { Transition } from 'react-spring';
 import track from 'common/utils/analytics';
 
+import Relative from 'common/components/Relative';
+
 const Empty = () => <span />;
 
 class OverlayComponent extends React.Component {
@@ -67,10 +69,7 @@ class OverlayComponent extends React.Component {
 
     return (
       // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-      <div
-        style={{ position: 'relative' }}
-        onMouseDown={e => e.preventDefault()}
-      >
+      <Relative onMouseDown={e => e.preventDefault()}>
         {children(this.open)}
         <Transition
           from={{ height: 0, opacity: 0 }}
@@ -80,7 +79,7 @@ class OverlayComponent extends React.Component {
           {/* TODO: Fix this */}
           {isOpen ? Overlay : Empty}
         </Transition>
-      </div>
+      </Relative>
     );
   }
 }
