@@ -111,7 +111,7 @@
     "install-dependencies": "yarn install"
   },
   "dependencies": {
-    "async": "^2.5.0",
+    "async": "^2.6.3",
     "pako": "^1.0.5"
   }
 }
