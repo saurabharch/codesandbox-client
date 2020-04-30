@@ -108,10 +108,14 @@
     "test": "npm-run-all test:prepare test:karma",
     "watch-test": "npm-run-all test:prepare --parallel watch:scripts test:watch test:karma",
     "docs": "typedoc --mode modules --out doc --excludePrivate --readme src/DOCS.md --name BrowserFS --module umd src",
-    "install-dependencies": "yarn install"
+    "install-dependencies": "yarn install",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "async": "^2.5.0",
-    "pako": "^1.0.5"
-  }
+    "pako": "^1.0.5",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
