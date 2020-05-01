@@ -29,7 +29,8 @@
     "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.2.1",
     "styled-components": "^3.2.1",
-    "three": "^0.87.1"
+    "three": "^0.87.1",
+    "snyk": "^1.316.1"
   },
   "keywords": [
     "gatsby"
@@ -44,7 +45,9 @@
     "start": "gatsby develop",
     "lint": "echo TODO && exit 0",
     "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Todo: no test specified\" && exit 0"
+    "test": "echo \"Todo: no test specified\" && exit 0",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "extract-text-webpack-plugin": "1.0.1",
@@ -57,5 +60,6 @@
     "> 1%",
     "IE >= 11",
     "last 2 versions"
-  ]
+  ],
+  "snyk": true
 }
