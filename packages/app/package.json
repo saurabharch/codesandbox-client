@@ -21,7 +21,9 @@
     "lint:app": "eslint src/app",
     "lint:embed": "eslint src/embed",
     "integrations:start": "docker run -v $(pwd):/app/ -it codesandbox/test yarn start:test",
-    "typecheck": "flow check"
+    "typecheck": "flow check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
@@ -240,7 +242,8 @@
     "vue-hot-reload-api": "^2.2.4",
     "vue-template-compiler": "^2.5.2",
     "vue-template-es2015-compiler": "^1.6.0",
-    "xterm": "3.7.0"
+    "xterm": "3.7.0",
+    "snyk": "^1.316.1"
   },
   "jest": {
     "roots": [
@@ -264,5 +267,6 @@
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
-  }
+  },
+  "snyk": true
 }
