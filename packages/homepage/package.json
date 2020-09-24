@@ -6,7 +6,7 @@
   "author": "Ives van Hoorne <ives.v.h@gmail.com>",
   "dependencies": {
     "algoliasearch": "^3.24.5",
-    "gatsby": "^1.9.165",
+    "gatsby": "^2.0.0",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-google-fonts": "^0.0.3",
     "gatsby-plugin-google-tagmanager": "^1.0.8",
@@ -28,7 +28,7 @@
     "react-media": "^1.6.1",
     "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.2.1",
-    "styled-components": "^3.2.1",
+    "styled-components": "^4.0.0",
     "three": "^0.87.1"
   },
   "keywords": [
