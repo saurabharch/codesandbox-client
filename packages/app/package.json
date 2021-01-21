@@ -169,7 +169,7 @@
     "gulp-rev": "^7.1.2",
     "hash-sum": "^1.0.2",
     "humps": "CompuIves/humps",
-    "immer": "^0.8.5",
+    "immer": "^8.0.1",
     "immutability-helper": "^2.6.6",
     "instantsearch.css": "^7.1.0",
     "is-url": "^1.2.2",
