@@ -226,7 +226,7 @@
     "react-stripe-elements": "^1.2.0",
     "react-tagsinput": "^3.19.0",
     "react-virtualized": "^9.19.1",
-    "shelljs": "^0.7.8",
+    "shelljs": "^0.8.5",
     "shortid": "^2.2.8",
     "socket.io-client": "^2.1.1",
     "store": "^2.0.12",
