@@ -34,7 +34,9 @@
     "test": "jest --env=jsdom",
     "test:integrations": "jest --config integration-tests/jest.config.json --maxWorkers=3",
     "test:watch": "jest --watch --env=jsdom",
-    "typecheck": "tsc --noEmit -p tsconfig.check.json && tsc --noEmit -p tsconfig.strictNullChecks.json"
+    "typecheck": "tsc --noEmit -p tsconfig.check.json && tsc --noEmit -p tsconfig.strictNullChecks.json",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "moduleDirectories": [
@@ -89,7 +91,7 @@
     "@typeform/embed": "^0.12.0",
     "@types/rc-slider": "^8.6.5",
     "@types/socket.io-client": "^1.4.32",
-    "airtable": "^0.5.8",
+    "airtable": "^0.10.1",
     "apollo-boost": "^0.4.4",
     "apollo-link-batch-http": "^1.2.12",
     "apollo-link-context": "^1.0.18",
@@ -137,9 +139,9 @@
     "graphql-subscriptions-client": "^0.12.0",
     "graphql-tag": "^2.10.1",
     "gsap": "^1.20.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-filter": "^5.0.0",
-    "gulp-postcss": "^6.4.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-rev": "^7.1.2",
     "hash-sum": "^1.0.2",
     "http-browserify": "^1.7.0",
@@ -198,10 +200,10 @@
     "react-dnd": "^9.4.0",
     "react-dnd-html5-backend": "^9.4.0",
     "react-dom": "^16.9.0",
-    "react-error-overlay": "^1.0.10",
+    "react-error-overlay": "^2.0.0",
     "react-icons": "^2.2.7",
     "react-input-autosize": "^2.2.1",
-    "react-instantsearch": "^5.7.0",
+    "react-instantsearch": "^6.0.0",
     "react-loadable": "^3.3.1",
     "react-markdown": "^4.3.1",
     "react-media": "^1.9.2",
@@ -244,7 +246,8 @@
     "vue-template-compiler": "^2.6.10",
     "vue-template-es2015-compiler": "^1.9.1",
     "vue3-transpiler": "1.0.0",
-    "xterm": "3.7.0"
+    "xterm": "3.7.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -371,5 +374,6 @@
     "whatwg-fetch": "^2.0.3",
     "workbox-webpack-plugin": "^3.6.3",
     "worker-loader": "2.0.0"
-  }
+  },
+  "snyk": true
 }
